@@ -3,11 +3,10 @@
 <plist version="1.0">
 <dict>
 	<key>Name</key>
-	<string>ChapterOneName</string>
-	<key>Pages</key>
-	<array>
-		<string>Cutscene.cutscenepage</string>
-		<string>PlaygroundPage.playgroundpage</string>
-	</array>
+	<string>ChapterOneCutsceneName</string>
+	<key>Version</key>
+	<string>1.0</string>
+	<key>CutsceneReference</key>
+	<string>letsPlayWithPizza/letsPlayWithPizza.html</string>
 </dict>
 </plist>
