@@ -25,3 +25,23 @@ public func instantiateLiveView() -> PlaygroundLiveViewable {
     return liveViewController
 }
 
+/// List of available live views
+public enum LiveViewID: String {
+    case ChapterOnePageOne, ChapterOnePageTwo, ChapterOnePageThree, ChapterTwoPageOne
+}
+
+/// Instantiates a new instance of a live view by storboardID
+///
+/// This load an instance of 'LiveViewController' from 'LiveView.storyboard' having the specified storyboardID
+public func instantiateLiveView(storyboardID: LiveViewID) -> PlaygroundLiveViewable {
+    let storyboard = UIStoryboard(name: "LiveView", bundle: nil)
+    
+    let viewController = storyboard.instantiateViewController(withIdentifier: storyboardID.rawValue)
+    
+    guard let liveViewController = viewController as? LiveViewController else {
+        fatalError("LiveView.storyboard's initial scene is not a LiveViewController; please either update the storyboard or this function")
+    }
+    
+    return liveViewController
+}
+
