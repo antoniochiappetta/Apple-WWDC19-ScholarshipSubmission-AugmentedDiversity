@@ -49,10 +49,10 @@
             </objects>
             <point key="canvasLocation" x="-119" y="81"/>
         </scene>
-        <!--Book Sources Live View Controller-->
+        <!--Ch1 Page2 Live View Controller-->
         <scene sceneID="yi6-xv-ew1">
             <objects>
-                <viewController storyboardIdentifier="ChapterOnePageTwo" id="Lii-Zo-hGW" customClass="Book_Sources_LiveViewController" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="ChapterOnePageTwo" id="Lii-Zo-hGW" customClass="Ch1Page2LiveViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="WBp-Df-9c9">
                         <rect key="frame" x="0.0" y="0.0" width="834" height="1194"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -76,10 +76,10 @@
             </objects>
             <point key="canvasLocation" x="670" y="81"/>
         </scene>
-        <!--Book Sources Live View Controller-->
+        <!--Ch1 Page3 Live View Controller-->
         <scene sceneID="tLR-BL-ryf">
             <objects>
-                <viewController storyboardIdentifier="ChapterOnePageThree" id="Gdz-fl-1lF" customClass="Book_Sources_LiveViewController" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="ChapterOnePageThree" id="Gdz-fl-1lF" customClass="Ch1Page3LiveViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="0Pp-cX-kwe">
                         <rect key="frame" x="0.0" y="0.0" width="834" height="1194"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -103,10 +103,10 @@
             </objects>
             <point key="canvasLocation" x="1454" y="81"/>
         </scene>
-        <!--Book Sources Live View Controller-->
+        <!--Ch2 Page1 Live View Controller-->
         <scene sceneID="KIr-eL-IMz">
             <objects>
-                <viewController storyboardIdentifier="ChapterTwoPageOne" id="VVe-9a-ij9" customClass="Book_Sources_LiveViewController" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="ChapterTwoPageOne" id="VVe-9a-ij9" customClass="Ch2Page1LiveViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="nMC-hE-747">
                         <rect key="frame" x="0.0" y="0.0" width="834" height="1194"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -152,6 +152,7 @@
                             <constraint firstAttribute="bottom" secondItem="mTB-bK-eXn" secondAttribute="bottom" id="Kl7-PQ-vBg"/>
                             <constraint firstItem="mTB-bK-eXn" firstAttribute="top" secondItem="E8u-0i-7GY" secondAttribute="top" id="qli-VF-r0Z"/>
                         </constraints>
+                        <viewLayoutGuide key="safeArea" id="UmC-PS-b8L"/>
                     </view>
                     <connections>
                         <outlet property="statusLabel" destination="mTB-bK-eXn" id="VNz-U0-tDC"/>

@@ -245,9 +245,9 @@
 		5EF2F9792054B64800191409 /* PrivateResources */ = {
 			isa = PBXGroup;
 			children = (
+				9CE89BA922419A7D008DE1CB /* Glossary.plist */,
 				5EF2F97E2054B6E400191409 /* ManifestPlist.strings */,
 				5E086DCC2051DDAE004D8D25 /* LiveView.storyboard */,
-				9CE89BA922419A7D008DE1CB /* Glossary.plist */,
 			);
 			path = PrivateResources;
 			sourceTree = "<group>";
