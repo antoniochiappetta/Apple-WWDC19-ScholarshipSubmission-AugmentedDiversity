@@ -8,19 +8,21 @@
 //#-end-hidden-code
 
 /*:
- # Hi man!
+ # What can you find around you?
  
- My name is Antonio and I'm gonna talk you about [biodiversity](glossary://Biodiversity).
- Many people don't appreciate who is different from them, they don't like people with a different skin color or coming from a different country. But everyone has something special to offer!
+ Many people are convinced that what is different from them is not always good. But they often don't know what they are missing about other people.
+ That's why I want you to explore to world around you to find out something about other amazing countries.
  
- Look at me! I'm italian and I have very special things to offer you!
- 
- ![Italy](ItalianFlag.png)
+ But first, you need to choose which country to discover.
+ - Example:
+ This example shows how to use the `discover` method with the name of a country to add it to the scene.\
+ \
+ `discover(country: .USA)`
  
  - - -
- 1. First of all, to enable the interactions with me, tap on *Run my code*.
- 2. Then try to long press on me and see what I can show you: I chose a *place*, a *dish* and an *ability*.
- 3. Every time you choose an option, you will understand once more why you should visit Italy!
+ 1. Move around until a plane is detected, you will see a box appear for each of the countries you chose.
+ 2. Each box has a flag on top of it, try to move closer to enter one of the box.
+ 3. Look inside the box, here you find a new triple of *place*, *dish* and *ability* typical of this particular country. See how many incredible things the world has to offer you?
  */
 //#-code-completion(everything, hide)
 //#-hidden-code
@@ -41,7 +43,7 @@ class LiveViewListener: PlaygroundRemoteLiveViewProxyDelegate {
         switch value {
         case let .boolean(animated):
             if animated == true {
-                page.assessmentStatus = .pass(message: "### Perfect! \nYou learnt what Italians have to offer you, go ahead and discover more about other people! \n\n[**Next page**](@next)")
+                page.assessmentStatus = .pass(message: "### Perfect! \nYou learnt that also people different from you have something special you can learn from, now go \"build\" your own individual! \n\n[**Next page**](@next)")
             }
         default:
             break
@@ -54,14 +56,30 @@ class LiveViewListener: PlaygroundRemoteLiveViewProxyDelegate {
 let listener = LiveViewListener()
 proxy?.delegate = listener
 
-func startLearning() {
+enum Country: String {
+    case China, Egypt, Italy, USA
+}
+
+var chosenCountries: [PlaygroundValue] = []
+
+func discover(country: Country) {
+    chosenCountries.append(.string(country.rawValue))
+}
+
+func showCountries(countries: [PlaygroundValue]) {
     if let proxy = page.liveView as? PlaygroundRemoteLiveViewProxy {
-        proxy.send(.boolean(true))
+        proxy.send(.array(countries))
     }
 }
 
 //#-end-hidden-code
-startLearning()
+//#-code-completion(everything, hide)
+//#-code-completion(identifier, show, discover(country:), ., China, Egypt, USA)
+//#-editable-code Send the right messages
+
 //#-end-editable-code
+//#-hidden-code
+showCountries(countries: chosenCountries)
+//#-end-hidden-code
 
 

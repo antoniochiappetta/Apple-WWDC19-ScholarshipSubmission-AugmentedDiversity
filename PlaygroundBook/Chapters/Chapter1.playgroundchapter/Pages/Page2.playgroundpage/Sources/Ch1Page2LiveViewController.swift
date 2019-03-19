@@ -9,7 +9,7 @@
 import UIKit
 import PlaygroundSupport
 
-@objc(Ch1Page1LiveViewController)
+@objc(Ch1Page2LiveViewController)
 public class Ch1Page2LiveViewController: LiveViewController {
     
     // MARK: - Properties
