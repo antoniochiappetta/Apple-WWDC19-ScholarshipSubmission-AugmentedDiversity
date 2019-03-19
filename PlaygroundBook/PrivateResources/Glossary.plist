@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>Terms</key>
+	<dict>
+		<key>Biodiversity</key>
+		<dict>
+			<key>Definition</key>
+			<string>Biodiversity refers to the variety and variability of life on Earth.</string>
+			<key>FirstUse</key>
+			<dict>
+				<key>PageReference</key>
+				<string>Chapter1/Page1</string>
+				<key>Title</key>
+				<string>Meet a person</string>
+			</dict>
+		</dict>
+	</dict>
+</dict>
+</plist>

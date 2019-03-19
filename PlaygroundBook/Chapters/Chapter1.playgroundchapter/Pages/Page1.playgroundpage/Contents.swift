@@ -15,7 +15,7 @@
  
  Look at me! I'm italian and I have very special things to offer you!
  
- ![Italy](ItalianFlag.jpg)
+ ![Italy](ItalianFlag.png)
  
  - - -
  1. First of all, to enable the interactions with me, tap on *Run my code*.
