@@ -6,7 +6,6 @@
 //  The Swift file containing the source code edited by the user of this playground book.
 //
 //#-end-hidden-code
-
 /*:
  # Hi man!
  
@@ -19,7 +18,7 @@
  
  - - -
  1. First of all, to enable the interactions with me, tap on *Run my code*.
- 2. Then try to long press on me and see what I can show you: I chose a *place*, a *dish* and an *ability*.
+ 2. Then try to long press on me and see what I can show you: I chose a *place*, a *dish* and a *skill*.
  3. Every time you choose an option, you will understand once more why you should visit Italy!
  */
 //#-code-completion(everything, hide)

@@ -10,24 +10,28 @@ import UIKit
 import PlaygroundSupport
 
 @objc(Ch1Page1LiveViewController)
-public class Ch1Page1LiveViewController: LiveViewController {
+public class Ch1Page1LiveViewController: StatusLiveViewController {
+    
+    // MARK: - Outlets
+    
+    @IBOutlet private weak var characterView: UIView!
+    @IBOutlet private weak var dishView: UIView!
+    @IBOutlet private weak var placeView: UIView!
+    @IBOutlet private weak var skillView: UIView!
     
     // MARK: - Properties
     
-    lazy var statusViewController: StatusViewController = {
-        return self.children.first! as! StatusViewController
-    }()
+    private var isCompleted = false
     
     // MARK: - Actions
     
-    @objc public func remindUser() {
-        self.statusViewController.show(message: "Run My Code to start learning")
-    }
-    
     @objc public func generateMenu() {
-        self.statusViewController.show(message: "Well done")
-        let message: PlaygroundValue = .boolean(true)
-        self.send(message)
+        if !isCompleted {
+            sayWellDone()
+            let message: PlaygroundValue = .boolean(true)
+            self.send(message)
+        }
+        isCompleted = true
     }
 
     // MARK: - PlaygroundLiveViewMessageHandler
@@ -36,11 +40,9 @@ public class Ch1Page1LiveViewController: LiveViewController {
         
         switch message {
         default:
-            let previousTap = UITapGestureRecognizer(target: self, action: #selector(remindUser))
-            view.removeGestureRecognizer(previousTap)
-            // Block long press interaction before user taps on run my code
+            view.gestureRecognizers?.removeAll()
             let longPress = UILongPressGestureRecognizer(target: self, action: #selector(generateMenu))
-            view.addGestureRecognizer(longPress)
+            characterView.addGestureRecognizer(longPress)
             break
         }
         

@@ -11,6 +11,15 @@ import UIKit
 @objc(StatusViewController)
 public class StatusViewController: UIViewController {
     
+    // MARK: - ViewController Lifecycle
+    override open func viewDidLoad() {
+        super.viewDidLoad()
+        
+        view.backgroundColor = .clear
+        statusLabel.backgroundColor = .brown
+        statusLabel.textColor = .white
+    }
+    
     // MARK: - Outlets
     @IBOutlet weak var statusLabel: UILabel! {
         didSet {

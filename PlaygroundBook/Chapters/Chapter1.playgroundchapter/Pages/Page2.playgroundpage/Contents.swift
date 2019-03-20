@@ -17,12 +17,12 @@
  - Example:
  This example shows how to use the `discover` method with the name of a country to add it to the scene.\
  \
- `discover(country: .USA)`
+ `discover(country: .Mexico)`
  
  - - -
  1. Move around until a plane is detected, you will see a box appear for each of the countries you chose.
  2. Each box has a flag on top of it, try to move closer to enter one of the box.
- 3. Look inside the box, here you find a new triple of *place*, *dish* and *ability* typical of this particular country. See how many incredible things the world has to offer you?
+ 3. Look inside the box, here you find a new triple of *place*, *dish* and *skill* typical of this particular country. See how many incredible things the world has to offer you?
  */
 //#-code-completion(everything, hide)
 //#-hidden-code
@@ -57,7 +57,7 @@ let listener = LiveViewListener()
 proxy?.delegate = listener
 
 enum Country: String {
-    case China, Egypt, Italy, USA
+    case China, Egypt, Italy, Mexico
 }
 
 var chosenCountries: [PlaygroundValue] = []
