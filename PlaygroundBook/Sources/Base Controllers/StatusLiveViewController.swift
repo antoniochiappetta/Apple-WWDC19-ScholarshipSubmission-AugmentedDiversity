@@ -37,4 +37,8 @@ open class StatusLiveViewController: LiveViewController {
         self.statusViewController.show(message: "Well done")
     }
     
+    @objc open func say(message: String) {
+        self.statusViewController.show(message: message)
+    }
+    
 }
