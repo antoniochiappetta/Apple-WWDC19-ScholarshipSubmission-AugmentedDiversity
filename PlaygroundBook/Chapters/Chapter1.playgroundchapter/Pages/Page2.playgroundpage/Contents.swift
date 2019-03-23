@@ -56,10 +56,6 @@ class LiveViewListener: PlaygroundRemoteLiveViewProxyDelegate {
 let listener = LiveViewListener()
 proxy?.delegate = listener
 
-enum Country: String {
-    case China, Egypt, Italy, Mexico
-}
-
 var chosenCountries: [PlaygroundValue] = []
 
 func discover(country: Country) {
@@ -74,7 +70,7 @@ func showCountries(countries: [PlaygroundValue]) {
 
 //#-end-hidden-code
 //#-code-completion(everything, hide)
-//#-code-completion(identifier, show, discover(country:), ., China, Egypt, USA)
+//#-code-completion(identifier, show, discover(country:), ., China, Egypt, Mexico)
 //#-editable-code Send the right messages
 
 //#-end-editable-code

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="fcD-sv-Xiz">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Lii-Zo-hGW">
     <device id="ipad11_0rounded" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -86,16 +86,10 @@
         <scene sceneID="yi6-xv-ew1">
             <objects>
                 <viewController storyboardIdentifier="ChapterOnePageTwo" id="Lii-Zo-hGW" customClass="Ch1Page2LiveViewController" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="WBp-Df-9c9">
+                    <view key="view" contentMode="scaleToFill" id="WBp-Df-9c9" customClass="ARSCNView">
                         <rect key="frame" x="0.0" y="0.0" width="834" height="1194"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Chapter 1 Page 2" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WBV-1N-K4p">
-                                <rect key="frame" x="351.5" y="586.5" width="131" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="MtA-vD-lAl">
                                 <rect key="frame" x="594" y="64" width="200" height="50"/>
                                 <constraints>
@@ -110,9 +104,7 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="ess-30-kfV" firstAttribute="trailing" secondItem="MtA-vD-lAl" secondAttribute="trailing" constant="40" id="8gO-RC-lWK"/>
-                            <constraint firstItem="WBV-1N-K4p" firstAttribute="centerY" secondItem="WBp-Df-9c9" secondAttribute="centerY" id="arK-Zm-vVJ"/>
                             <constraint firstItem="MtA-vD-lAl" firstAttribute="top" secondItem="ess-30-kfV" secondAttribute="top" constant="40" id="xwO-Yn-piP"/>
-                            <constraint firstItem="WBV-1N-K4p" firstAttribute="centerX" secondItem="WBp-Df-9c9" secondAttribute="centerX" id="zDS-zt-cZ4"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="ess-30-kfV"/>
                     </view>
