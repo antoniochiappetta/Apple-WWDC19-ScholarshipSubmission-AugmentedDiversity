@@ -81,6 +81,7 @@ public class Ch1Page2LiveViewController: StatusLiveViewController, ARSCNViewDele
     
     public override func receive(_ message: PlaygroundValue) {
         
+        isCompleted = false
         didInitializeScene = false
         
         sceneView.scene.rootNode.enumerateChildNodes { (node, stop) in
