@@ -12,7 +12,9 @@ open class StatusLiveViewController: LiveViewController {
     
     // MARK: - Properties
     
-    lazy open var statusViewController: StatusViewController = {
+    public var isCompleted = false
+    
+    lazy public var statusViewController: StatusViewController = {
         return self.children.first! as! StatusViewController
     }()
     
@@ -29,15 +31,23 @@ open class StatusLiveViewController: LiveViewController {
     
     // MARK: - Actions
     
-    @objc open func sayWarning() {
-        self.statusViewController.show(message: "Run My Code to start learning")
+    public func showCompletion() {
+        if !isCompleted {
+            let message: PlaygroundValue = .boolean(true)
+            self.send(message)
+        }
+        isCompleted = true
     }
     
-    @objc open func sayWellDone() {
+    @objc public func sayWarning() {
+        self.statusViewController.show(message: "Press Run My Code")
+    }
+    
+    @objc public func sayWellDone() {
         self.statusViewController.show(message: "Well done")
     }
     
-    @objc open func say(message: String) {
+    @objc public func say(message: String) {
         self.statusViewController.show(message: message)
     }
     

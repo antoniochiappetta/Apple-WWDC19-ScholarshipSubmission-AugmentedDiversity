@@ -12,7 +12,7 @@ import ARKit
 
 @available(iOS 11.0, *)
 @objc(Ch1Page2LiveViewController)
-public class Ch1Page2LiveViewController: StatusLiveViewController, ARSCNViewDelegate, ARSessionDelegate {
+public class Ch1Page2LiveViewController: StatusLiveViewController, ARSCNViewDelegate, SCNPhysicsContactDelegate {
     
     // MARK: - Outlets
     
@@ -23,7 +23,6 @@ public class Ch1Page2LiveViewController: StatusLiveViewController, ARSCNViewDele
     
     // MARK: - Properties
     
-    private var isCompleted = false
     private var didInitializeScene = false
     private var chosenCountries: [Country] = []
     
@@ -49,19 +48,15 @@ public class Ch1Page2LiveViewController: StatusLiveViewController, ARSCNViewDele
     
     // MARK: - Actions
     
-    private func showCompletion() {
-        if !isCompleted {
-            let message: PlaygroundValue = .boolean(true)
-            self.send(message)
-        }
-        isCompleted = true
-    }
-    
     public func setupScene() {
         if let view = self.view as? ARSCNView {
             sceneView = view
             sceneView.delegate = self
-            sceneView.session.delegate = self
+            sceneView.scene.physicsWorld.contactDelegate = self
+            sceneView.pointOfView?.physicsBody = SCNPhysicsBody(type: .dynamic, shape: SCNPhysicsShape(geometry: SCNSphere(radius: 0.0001), options: [:]))
+            sceneView.pointOfView?.physicsBody?.categoryBitMask = 0
+            sceneView.pointOfView?.physicsBody?.collisionBitMask = 0
+            sceneView.pointOfView?.physicsBody?.contactTestBitMask = -1
         }
     }
     
@@ -114,17 +109,30 @@ public class Ch1Page2LiveViewController: StatusLiveViewController, ARSCNViewDele
     // MARK: - ARSCNViewDelegate
     
     public func renderer(_ renderer: SCNSceneRenderer, didAdd node: SCNNode, for anchor: ARAnchor) {
-        
-        if !didInitializeScene {
-            say(message: "Plane detected!")
-            if let camera = sceneView.session.currentFrame?.camera {
-                didInitializeScene = true
-                var translation = matrix_identity_float4x4
-                translation.columns.3.z = -1.0
-                let transform = camera.transform * translation
-                let position = SCNVector3(transform.columns.3.x, transform.columns.3.y, transform.columns.3.z)
-                addElements(position: position)
+        DispatchQueue.main.async {
+            if !self.didInitializeScene {
+                self.say(message: "Plane detected!")
+                if let camera = self.sceneView.session.currentFrame?.camera {
+                    self.didInitializeScene = true
+                    var translation = matrix_identity_float4x4
+                    translation.columns.3.z = -1.0
+                    let transform = camera.transform * translation
+                    let position = SCNVector3(transform.columns.3.x, transform.columns.3.y, transform.columns.3.z)
+                    self.addElements(position: position)
+                    self.showCompletion()
+                }
             }
         }
     }
+    
+    // MARK: - SCNPhysicsContactDelegate
+    
+    public func physicsWorld(_ world: SCNPhysicsWorld, didBegin contact: SCNPhysicsContact) {
+        if let camera = sceneView.pointOfView {
+            if camera == contact.nodeA || camera == contact.nodeB {
+                self.showCompletion()
+            }
+        }
+    }
+    
 }

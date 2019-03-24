@@ -20,9 +20,10 @@
  `discover(country: .Mexico)`
  
  - - -
- 1. Move around until a plane is detected, you will see a box appear for each of the countries you chose.
- 2. Each box has a flag on top of it, try to move closer to enter one of the box.
- 3. Look inside the box, here you find a new triple of *place*, *dish* and *skill* typical of this particular country. See how many incredible things the world has to offer you?
+ 1. Choose countries to *discover* and tap on *Run My Code*
+ 2. Move around until a plane is detected, you will see a sphere appear for each of the countries you chose.
+ 3. Each sphere has a flag on top of it, try to move closer to enter one of the them.
+ 4. Look inside the box, here you find a new triple of *skill*, *place* and *dish* typical of this particular country. See how many incredible things the world has to offer you?
  */
 //#-code-completion(everything, hide)
 //#-hidden-code
@@ -43,7 +44,7 @@ class LiveViewListener: PlaygroundRemoteLiveViewProxyDelegate {
         switch value {
         case let .boolean(animated):
             if animated == true {
-                page.assessmentStatus = .pass(message: "### Perfect! \nYou learnt that also people different from you have something special you can learn from, now go \"build\" your own individual! \n\n[**Next page**](@next)")
+                page.assessmentStatus = .pass(message: "### Perfect! \nYou can go inside the spheres to see that also people different from you have something special you can learn from, now go \"build\" your own persona! \n\n[**Next page**](@next)")
             }
         default:
             break
