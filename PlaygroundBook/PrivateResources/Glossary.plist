@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>Terms</key>
+	<dict>
+		<key>GlobalCitizen</key>
+		<dict>
+			<key>Definition</key>
+			<string>A global citizen is someone who is aware of and understands the wider world - and their place in it. They take an active role in their community, and work with others to make our planet more equal, fair and sustainable.</string>
+			<key>FirstUse</key>
+			<dict>
+				<key>PageReference</key>
+				<string>Chapter1/Page3</string>
+				<key>Title</key>
+				<string>Build your persona</string>
+			</dict>
+		</dict>
+		<key>HumanDiversity</key>
+		<dict>
+			<key>Definition</key>
+			<string>Human diversity is defined by the sum of unique biological and cultural variation within our species</string>
+			<key>FirstUse</key>
+			<dict>
+				<key>PageReference</key>
+				<string>Chapter1/Page1</string>
+				<key>Title</key>
+				<string>Meet a person</string>
+			</dict>
+		</dict>
+	</dict>
+</dict>
+</plist>

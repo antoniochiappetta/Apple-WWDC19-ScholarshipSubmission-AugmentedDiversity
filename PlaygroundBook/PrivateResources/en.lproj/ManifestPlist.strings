@@ -5,11 +5,35 @@ Abstract:
 Contains English localizations of values in Manifest.plist files in the playground book.
 */
 
-/* The localized name of the playground book. */
+/*
+ This playground book aims at showing the importance of diversity in human beings
+*/
 "PlaygroundBookName" = "AugmentedDiversity";
 
-/* The localized name of the first chapter in the playground book. */
+/*
+ MARK: - Chapter 1
+ Understand diversity pros
+*/
 "ChapterOneName" = "Everyone is special";
+"ChapterOneCutsceneName" = "Welcome to augmented diversity";
 
-/* The localized name of the first page in the first chapter in the playground book. */
+/*
+ A person can be identified by many things, let's focus on what amazing things he can teach you about his origins
+ culture, food, places
+ As an example we use an italian man, he holds an italian flag and he is in a road with indications to italian cities. Long press makes a three button menu appear, from each button (culture, food, places) the user can activate an animation about a symbol for that category in italy
+ Choosing
+*/
 "ChapterOnePageOneName" = "Meet a person";
+
+/*
+ Many people are convinced that what is different from them is not always good. But they often don't know what they are missing about other people.
+ In an augmented reality scene, three boxes with labels about new countries are shown. Entering a box the user can see the three symbols chosen for that particular country.
+ The user can write code to choose which of the available boxes can be shown.
+*/
+"ChapterOnePageTwoName" = "Explore diversity";
+
+/*
+ The user now has to construct the right behaviour for his personal new individual
+ Once the methods have been redefined appropriately, they are called in sequence to generate the animations that show the newly created individual
+*/
+"ChapterOnePageThreeName" = "Generate diversity";
