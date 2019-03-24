@@ -6,11 +6,10 @@
 //  The Swift file containing the source code edited by the user of this playground book.
 //
 //#-end-hidden-code
-
 /*:
  # What can you find around you?
  
- Many people are convinced that what is different from them is not always good. But they often don't know what they are missing about other people.
+ Many people think that what is different from them is not always good, but they don't know what they are missing about other people.
  That's why I want you to explore to world around you to find out something about other amazing countries.
  
  But first, you need to choose which country to discover.
@@ -20,10 +19,9 @@
  `discover(country: .Mexico)`
  
  - - -
- 1. Choose countries to *discover* and tap on *Run My Code*
- 2. Move around until a plane is detected, you will see a sphere appear for each of the countries you chose.
- 3. Each sphere has a flag on top of it, try to move closer to enter one of the them.
- 4. Look inside the box, here you find a new triple of *skill*, *place* and *dish* typical of this particular country. See how many incredible things the world has to offer you?
+ 1. Choose countries to *discover* and tap on *Run My Code*.
+ 2. Move around until a plane is detected, you will see a sphere appearing for each of the countries you chose.
+ 3. Try to enter a sphere, you will find a new triple of *skill*, *place* and *dish* typical of this particular country. See how many incredible things the world has to offer you?
  */
 //#-code-completion(everything, hide)
 //#-hidden-code

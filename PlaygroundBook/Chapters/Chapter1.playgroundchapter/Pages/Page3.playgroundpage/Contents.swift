@@ -17,7 +17,7 @@
  
  - - -
  1. You still see is still me, Antonio, the Italian man. Try redefining the properties of the character to build your *persona* and tap on *Run My Code*.
- 2. Try to long press on your persona and enjoy the mix of dish, place, skill and physical characteristics you just created.
+ 2. Long press on your persona to enjoy the mix of physical and cultural characteristics you just created.
  */
 //#-code-completion(everything, hide)
 //#-hidden-code
