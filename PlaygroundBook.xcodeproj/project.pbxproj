@@ -38,6 +38,7 @@
 		9C1B60F82247F33600DE171F /* placeAction.png in Resources */ = {isa = PBXBuildFile; fileRef = 9C1B60F52247F33600DE171F /* placeAction.png */; };
 		9C1B60F92247F33600DE171F /* skillAction.png in Resources */ = {isa = PBXBuildFile; fileRef = 9C1B60F62247F33600DE171F /* skillAction.png */; };
 		9C345E9322417D2E001BF030 /* StatusViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C345E9222417D2E001BF030 /* StatusViewController.swift */; };
+		9C3DEE1E224812260008D164 /* AugmentedDiversity.png in Resources */ = {isa = PBXBuildFile; fileRef = 9C3DEE1D224812260008D164 /* AugmentedDiversity.png */; };
 		9CAC7EF42243E345006A2523 /* GameAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CAC7EF12243E345006A2523 /* GameAction.swift */; };
 		9CAC7EF62243E345006A2523 /* GameMenuNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CAC7EF32243E345006A2523 /* GameMenuNode.swift */; };
 		9CAC7EFE2244354E006A2523 /* SpriteKit - Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CAC7EFD2244354E006A2523 /* SpriteKit - Ext.swift */; };
@@ -184,6 +185,7 @@
 		9C1B60F52247F33600DE171F /* placeAction.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = placeAction.png; sourceTree = "<group>"; };
 		9C1B60F62247F33600DE171F /* skillAction.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = skillAction.png; sourceTree = "<group>"; };
 		9C345E9222417D2E001BF030 /* StatusViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StatusViewController.swift; sourceTree = "<group>"; };
+		9C3DEE1D224812260008D164 /* AugmentedDiversity.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = AugmentedDiversity.png; sourceTree = "<group>"; };
 		9CAC7EF12243E345006A2523 /* GameAction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameAction.swift; sourceTree = "<group>"; };
 		9CAC7EF32243E345006A2523 /* GameMenuNode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameMenuNode.swift; sourceTree = "<group>"; };
 		9CAC7EFD2244354E006A2523 /* SpriteKit - Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "SpriteKit - Ext.swift"; sourceTree = "<group>"; };
@@ -351,6 +353,7 @@
 		5EF2F9792054B64800191409 /* PrivateResources */ = {
 			isa = PBXGroup;
 			children = (
+				9C3DEE1D224812260008D164 /* AugmentedDiversity.png */,
 				9C0B0B6322457F0B00E31A6B /* 2D */,
 				9C0B0B6222457F0300E31A6B /* 3D */,
 				9CE89BA922419A7D008DE1CB /* Glossary.plist */,
@@ -701,6 +704,7 @@
 				9CED05BE2246F2BF004B5E9D /* China_hair.png in Resources */,
 				9C1B60E72247E80E00DE171F /* Mexico_skill.png in Resources */,
 				9CED05AC2246F29C004B5E9D /* Mexico_character_2.png in Resources */,
+				9C3DEE1E224812260008D164 /* AugmentedDiversity.png in Resources */,
 				9CED05B62246F2B4004B5E9D /* Mexico_clothes.png in Resources */,
 				9C0B0B6E2245919F00E31A6B /* EgyptFlag.jpg in Resources */,
 				9C1B60F32247EB2A00DE171F /* China_dish.png in Resources */,
