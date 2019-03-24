@@ -10,7 +10,7 @@
  # What can you find around you?
  
  Many people think that what is different from them is not always good, but they don't know what they are missing about other people.
- That's why I want you to explore to world around you to find out something about other amazing countries.
+ That's why I want you to explore the world around you to find out something about other amazing countries.
  
  But first, you need to choose which country to discover.
  - Example:

@@ -52,15 +52,12 @@ public class Ch1Page2LiveViewController: StatusLiveViewController, ARSCNViewDele
         if let view = self.view as? ARSCNView {
             sceneView = view
             sceneView.delegate = self
-            sceneView.scene.physicsWorld.contactDelegate = self
-            sceneView.pointOfView?.physicsBody = SCNPhysicsBody(type: .dynamic, shape: SCNPhysicsShape(geometry: SCNSphere(radius: 0.0001), options: [:]))
-            sceneView.pointOfView?.physicsBody?.categoryBitMask = 0
-            sceneView.pointOfView?.physicsBody?.collisionBitMask = 0
-            sceneView.pointOfView?.physicsBody?.contactTestBitMask = -1
         }
     }
     
     public func addElements(position: SCNVector3) {
+        
+        self.say(message: "Plane detected!")
         
         let containerNode = SCNNode()
         let nodesInFile = SCNNode.allNodes(from: "BioDiversityBoxes.scn")
@@ -75,6 +72,10 @@ public class Ch1Page2LiveViewController: StatusLiveViewController, ARSCNViewDele
         
         containerNode.position = position
         sceneView.scene.rootNode.addChildNode(containerNode)
+        
+        self.didInitializeScene = true
+        
+        self.showCompletion()
     }
     
     // MARK: - PlaygroundLiveViewMessageHandler
@@ -83,6 +84,7 @@ public class Ch1Page2LiveViewController: StatusLiveViewController, ARSCNViewDele
         
         isCompleted = false
         didInitializeScene = false
+        sceneView.delegate = self
         
         sceneView.scene.rootNode.enumerateChildNodes { (node, stop) in
             node.removeFromParentNode()
@@ -112,26 +114,13 @@ public class Ch1Page2LiveViewController: StatusLiveViewController, ARSCNViewDele
     public func renderer(_ renderer: SCNSceneRenderer, didAdd node: SCNNode, for anchor: ARAnchor) {
         DispatchQueue.main.async {
             if !self.didInitializeScene {
-                self.say(message: "Plane detected!")
                 if let camera = self.sceneView.session.currentFrame?.camera {
-                    self.didInitializeScene = true
                     var translation = matrix_identity_float4x4
                     translation.columns.3.z = -1.0
                     let transform = camera.transform * translation
                     let position = SCNVector3(transform.columns.3.x, transform.columns.3.y, transform.columns.3.z)
                     self.addElements(position: position)
-                    self.showCompletion()
                 }
-            }
-        }
-    }
-    
-    // MARK: - SCNPhysicsContactDelegate
-    
-    public func physicsWorld(_ world: SCNPhysicsWorld, didBegin contact: SCNPhysicsContact) {
-        if let camera = sceneView.pointOfView {
-            if camera == contact.nodeA || camera == contact.nodeB {
-                self.showCompletion()
             }
         }
     }

@@ -38,7 +38,7 @@ class LiveViewListener: PlaygroundRemoteLiveViewProxyDelegate {
         switch value {
         case let .boolean(animated):
             if animated == true {
-                page.assessmentStatus = .pass(message: "### Fantastic! \nYou are truly part of a **multicultural world** now! Go and spread the world about the importance of human diversity with everyone!")
+                page.assessmentStatus = .pass(message: "### Fantastic! \nYou are truly part of a **multicultural world** now! Go and spread the word about the importance of human diversity with everyone!")
             }
         default:
             break
@@ -85,12 +85,12 @@ func showCharacter(character: [String:PlaygroundValue]) {
 
 //#-end-hidden-code
 //#-code-completion(everything, hide)
-//#-code-completion(identifier, show, select(dish:), Dish, ., Gyoza, KushariTea, Pizza, Tacos)
-//#-code-completion(identifier, show, select(place:), Place, ., ChineseWall, Pyramids, Colosseum, MayaTemples)
-//#-code-completion(identifier, show, select(skill:), Skill, ., MartialArts, Camels, Football, Corrida)
-//#-code-completion(identifier, show, change(clothes:), Clothes, ., China, Egypt, Italy, Mexico)
-//#-code-completion(identifier, show, change(skin:), Skin, ., China, Egypt, Italy, Mexico)
-//#-code-completion(identifier, show, change(hair:), Hair, ., China, Egypt, Italy, Mexico)
+//#-code-completion(identifier, show, select(dish:), ., Gyoza, KushariTea, Pizza, Tacos)
+//#-code-completion(identifier, show, select(place:), ., ChineseWall, Pyramids, Colosseum, MayaTemples)
+//#-code-completion(identifier, show, select(skill:), ., MartialArts, Camels, Football, Corrida)
+//#-code-completion(identifier, show, change(clothes:), ., China, Egypt, Italy, Mexico)
+//#-code-completion(identifier, show, change(skin:), ., China, Egypt, Italy, Mexico)
+//#-code-completion(identifier, show, change(hair:), ., China, Egypt, Italy, Mexico)
 //#-editable-code Build persona
 
 //#-end-editable-code
