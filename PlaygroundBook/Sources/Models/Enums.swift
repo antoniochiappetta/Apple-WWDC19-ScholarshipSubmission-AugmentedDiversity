@@ -14,14 +14,14 @@ public typealias Skin = Country
 public typealias Hair = Country
 
 public enum Dish: String {
-    case Ramen, The, Pizza = "Napoli's Pizza!", Tacos
+    case Gyoza = "Gyoza", KushariTea = "Kushari Tea", Pizza = "Napoli's Pizza", Tacos = "Tacos"
     
     init(country: Country) {
         switch country {
         case .China:
-            self = .Ramen
+            self = .Gyoza
         case .Egypt:
-            self = .The
+            self = .KushariTea
         case .Italy:
             self = .Pizza
         case .Mexico:
@@ -31,9 +31,9 @@ public enum Dish: String {
     
     func getCountry() -> Country {
         switch self {
-        case .Ramen:
+        case .Gyoza:
             return .China
-        case .The:
+        case .KushariTea:
             return .Egypt
         case .Pizza:
             return .Italy
@@ -44,7 +44,7 @@ public enum Dish: String {
 }
 
 public enum Place: String {
-    case ChineseWall, Pyramids, Colosseum = "Roma's Colosseum!", MayaTemple
+    case ChineseWall = "Chinese Wall", Pyramids = "Pyramids", Colosseum = "Roma's Colosseum!", MayaTemples = "Maya Temples"
     
     init(country: Country) {
         switch country {
@@ -55,7 +55,7 @@ public enum Place: String {
         case .Italy:
             self = .Colosseum
         case .Mexico:
-            self = .MayaTemple
+            self = .MayaTemples
         }
     }
     
@@ -67,21 +67,21 @@ public enum Place: String {
             return .Egypt
         case .Colosseum:
             return .Italy
-        case .MayaTemple:
+        case .MayaTemples:
             return .Mexico
         }
     }
 }
 
 public enum Skill: String {
-    case MartialArts, Hieroglyphs, Football = "Football!", Corrida
+    case MartialArts = "Martial arts", Camels = "Ride camels", Football = "Play football", Corrida = "Corrida"
     
     init(country: Country) {
         switch country {
         case .China:
             self = .MartialArts
         case .Egypt:
-            self = .Hieroglyphs
+            self = .Camels
         case .Italy:
             self = .Football
         case .Mexico:
@@ -93,7 +93,7 @@ public enum Skill: String {
         switch self {
         case .MartialArts:
             return .China
-        case .Hieroglyphs:
+        case .Camels:
             return .Egypt
         case .Football:
             return .Italy

@@ -28,18 +28,18 @@
 		9C0B0B6C2245915100E31A6B /* ChinaFlag.png in Resources */ = {isa = PBXBuildFile; fileRef = 9C0B0B6B2245915100E31A6B /* ChinaFlag.png */; };
 		9C0B0B6E2245919F00E31A6B /* EgyptFlag.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 9C0B0B6D2245919F00E31A6B /* EgyptFlag.jpg */; };
 		9C0B0B70224591D700E31A6B /* MexicoFlag.png in Resources */ = {isa = PBXBuildFile; fileRef = 9C0B0B6F224591D700E31A6B /* MexicoFlag.png */; };
-		9C1B60CD2247A58800DE171F /* China_skill.png in Resources */ = {isa = PBXBuildFile; fileRef = 9C1B60CA2247A58800DE171F /* China_skill.png */; };
-		9C1B60CE2247A58800DE171F /* Egypt_skill.png in Resources */ = {isa = PBXBuildFile; fileRef = 9C1B60CB2247A58800DE171F /* Egypt_skill.png */; };
-		9C1B60CF2247A58800DE171F /* Mexico_skill.png in Resources */ = {isa = PBXBuildFile; fileRef = 9C1B60CC2247A58800DE171F /* Mexico_skill.png */; };
-		9C1B60D32247A5AB00DE171F /* Egypt_dish.png in Resources */ = {isa = PBXBuildFile; fileRef = 9C1B60D02247A5AB00DE171F /* Egypt_dish.png */; };
-		9C1B60D42247A5AB00DE171F /* Mexico_dish.png in Resources */ = {isa = PBXBuildFile; fileRef = 9C1B60D12247A5AB00DE171F /* Mexico_dish.png */; };
-		9C1B60D52247A5AB00DE171F /* China_dish.png in Resources */ = {isa = PBXBuildFile; fileRef = 9C1B60D22247A5AB00DE171F /* China_dish.png */; };
+		9C1B60DA2247DF2A00DE171F /* China_skill.png in Resources */ = {isa = PBXBuildFile; fileRef = 9C1B60D82247DF2A00DE171F /* China_skill.png */; };
+		9C1B60E62247E80E00DE171F /* Egypt_skill.png in Resources */ = {isa = PBXBuildFile; fileRef = 9C1B60E42247E80E00DE171F /* Egypt_skill.png */; };
+		9C1B60E72247E80E00DE171F /* Mexico_skill.png in Resources */ = {isa = PBXBuildFile; fileRef = 9C1B60E52247E80E00DE171F /* Mexico_skill.png */; };
+		9C1B60F12247EB2A00DE171F /* Egypt_dish.png in Resources */ = {isa = PBXBuildFile; fileRef = 9C1B60EE2247EB2A00DE171F /* Egypt_dish.png */; };
+		9C1B60F22247EB2A00DE171F /* Mexico_dish.png in Resources */ = {isa = PBXBuildFile; fileRef = 9C1B60EF2247EB2A00DE171F /* Mexico_dish.png */; };
+		9C1B60F32247EB2A00DE171F /* China_dish.png in Resources */ = {isa = PBXBuildFile; fileRef = 9C1B60F02247EB2A00DE171F /* China_dish.png */; };
+		9C1B60F72247F33600DE171F /* dishAction.png in Resources */ = {isa = PBXBuildFile; fileRef = 9C1B60F42247F33500DE171F /* dishAction.png */; };
+		9C1B60F82247F33600DE171F /* placeAction.png in Resources */ = {isa = PBXBuildFile; fileRef = 9C1B60F52247F33600DE171F /* placeAction.png */; };
+		9C1B60F92247F33600DE171F /* skillAction.png in Resources */ = {isa = PBXBuildFile; fileRef = 9C1B60F62247F33600DE171F /* skillAction.png */; };
 		9C345E9322417D2E001BF030 /* StatusViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C345E9222417D2E001BF030 /* StatusViewController.swift */; };
 		9CAC7EF42243E345006A2523 /* GameAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CAC7EF12243E345006A2523 /* GameAction.swift */; };
 		9CAC7EF62243E345006A2523 /* GameMenuNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CAC7EF32243E345006A2523 /* GameMenuNode.swift */; };
-		9CAC7EFA22443389006A2523 /* placeAction.png in Resources */ = {isa = PBXBuildFile; fileRef = 9CAC7EF722443389006A2523 /* placeAction.png */; };
-		9CAC7EFB22443389006A2523 /* skillAction.png in Resources */ = {isa = PBXBuildFile; fileRef = 9CAC7EF822443389006A2523 /* skillAction.png */; };
-		9CAC7EFC22443389006A2523 /* dishAction.png in Resources */ = {isa = PBXBuildFile; fileRef = 9CAC7EF922443389006A2523 /* dishAction.png */; };
 		9CAC7EFE2244354E006A2523 /* SpriteKit - Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CAC7EFD2244354E006A2523 /* SpriteKit - Ext.swift */; };
 		9CCA63732242C07F0028C835 /* StatusLiveViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CCA63722242C07F0028C835 /* StatusLiveViewController.swift */; };
 		9CE89BAA22419A7D008DE1CB /* Glossary.plist in Resources */ = {isa = PBXBuildFile; fileRef = 9CE89BA922419A7D008DE1CB /* Glossary.plist */; };
@@ -174,18 +174,18 @@
 		9C0B0B6B2245915100E31A6B /* ChinaFlag.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ChinaFlag.png; sourceTree = "<group>"; };
 		9C0B0B6D2245919F00E31A6B /* EgyptFlag.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = EgyptFlag.jpg; sourceTree = "<group>"; };
 		9C0B0B6F224591D700E31A6B /* MexicoFlag.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = MexicoFlag.png; sourceTree = "<group>"; };
-		9C1B60CA2247A58800DE171F /* China_skill.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = China_skill.png; sourceTree = "<group>"; };
-		9C1B60CB2247A58800DE171F /* Egypt_skill.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Egypt_skill.png; sourceTree = "<group>"; };
-		9C1B60CC2247A58800DE171F /* Mexico_skill.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Mexico_skill.png; sourceTree = "<group>"; };
-		9C1B60D02247A5AB00DE171F /* Egypt_dish.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Egypt_dish.png; sourceTree = "<group>"; };
-		9C1B60D12247A5AB00DE171F /* Mexico_dish.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Mexico_dish.png; sourceTree = "<group>"; };
-		9C1B60D22247A5AB00DE171F /* China_dish.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = China_dish.png; sourceTree = "<group>"; };
+		9C1B60D82247DF2A00DE171F /* China_skill.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = China_skill.png; sourceTree = "<group>"; };
+		9C1B60E42247E80E00DE171F /* Egypt_skill.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Egypt_skill.png; sourceTree = "<group>"; };
+		9C1B60E52247E80E00DE171F /* Mexico_skill.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Mexico_skill.png; sourceTree = "<group>"; };
+		9C1B60EE2247EB2A00DE171F /* Egypt_dish.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Egypt_dish.png; sourceTree = "<group>"; };
+		9C1B60EF2247EB2A00DE171F /* Mexico_dish.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Mexico_dish.png; sourceTree = "<group>"; };
+		9C1B60F02247EB2A00DE171F /* China_dish.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = China_dish.png; sourceTree = "<group>"; };
+		9C1B60F42247F33500DE171F /* dishAction.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = dishAction.png; sourceTree = "<group>"; };
+		9C1B60F52247F33600DE171F /* placeAction.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = placeAction.png; sourceTree = "<group>"; };
+		9C1B60F62247F33600DE171F /* skillAction.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = skillAction.png; sourceTree = "<group>"; };
 		9C345E9222417D2E001BF030 /* StatusViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StatusViewController.swift; sourceTree = "<group>"; };
 		9CAC7EF12243E345006A2523 /* GameAction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameAction.swift; sourceTree = "<group>"; };
 		9CAC7EF32243E345006A2523 /* GameMenuNode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameMenuNode.swift; sourceTree = "<group>"; };
-		9CAC7EF722443389006A2523 /* placeAction.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = placeAction.png; sourceTree = "<group>"; };
-		9CAC7EF822443389006A2523 /* skillAction.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = skillAction.png; sourceTree = "<group>"; };
-		9CAC7EF922443389006A2523 /* dishAction.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = dishAction.png; sourceTree = "<group>"; };
 		9CAC7EFD2244354E006A2523 /* SpriteKit - Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "SpriteKit - Ext.swift"; sourceTree = "<group>"; };
 		9CCA63722242C07F0028C835 /* StatusLiveViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatusLiveViewController.swift; sourceTree = "<group>"; };
 		9CE89BA922419A7D008DE1CB /* Glossary.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Glossary.plist; sourceTree = "<group>"; };
@@ -415,9 +415,9 @@
 		9CAC7EFF22443CC4006A2523 /* Menu */ = {
 			isa = PBXGroup;
 			children = (
-				9CAC7EF922443389006A2523 /* dishAction.png */,
-				9CAC7EF822443389006A2523 /* skillAction.png */,
-				9CAC7EF722443389006A2523 /* placeAction.png */,
+				9C1B60F42247F33500DE171F /* dishAction.png */,
+				9C1B60F52247F33600DE171F /* placeAction.png */,
+				9C1B60F62247F33600DE171F /* skillAction.png */,
 			);
 			path = Menu;
 			sourceTree = "<group>";
@@ -465,10 +465,10 @@
 		9CED05952246DFF6004B5E9D /* Dishes */ = {
 			isa = PBXGroup;
 			children = (
-				9C1B60D22247A5AB00DE171F /* China_dish.png */,
-				9C1B60D02247A5AB00DE171F /* Egypt_dish.png */,
+				9C1B60F02247EB2A00DE171F /* China_dish.png */,
+				9C1B60EE2247EB2A00DE171F /* Egypt_dish.png */,
+				9C1B60EF2247EB2A00DE171F /* Mexico_dish.png */,
 				9CED05932246DFF3004B5E9D /* Italy_dish.png */,
-				9C1B60D12247A5AB00DE171F /* Mexico_dish.png */,
 			);
 			path = Dishes;
 			sourceTree = "<group>";
@@ -476,10 +476,10 @@
 		9CED05962246E9C6004B5E9D /* Skills */ = {
 			isa = PBXGroup;
 			children = (
-				9C1B60CA2247A58800DE171F /* China_skill.png */,
-				9C1B60CB2247A58800DE171F /* Egypt_skill.png */,
+				9C1B60E42247E80E00DE171F /* Egypt_skill.png */,
+				9C1B60E52247E80E00DE171F /* Mexico_skill.png */,
+				9C1B60D82247DF2A00DE171F /* China_skill.png */,
 				9CED059B2246EBE5004B5E9D /* Italy_skill.png */,
-				9C1B60CC2247A58800DE171F /* Mexico_skill.png */,
 			);
 			path = Skills;
 			sourceTree = "<group>";
@@ -679,30 +679,31 @@
 			buildActionMask = 2147483647;
 			files = (
 				9CED05CA2246F2CE004B5E9D /* China_skin_1.png in Resources */,
-				9C1B60CF2247A58800DE171F /* Mexico_skill.png in Resources */,
 				9CED059C2246EBE5004B5E9D /* Italy_skill.png in Resources */,
 				9CED05AB2246F29C004B5E9D /* Egypt_character_2.png in Resources */,
+				9C1B60F82247F33600DE171F /* placeAction.png in Resources */,
 				9C0B0B6C2245915100E31A6B /* ChinaFlag.png in Resources */,
 				9CED05BF2246F2BF004B5E9D /* Mexico_hair.png in Resources */,
-				9C1B60CE2247A58800DE171F /* Egypt_skill.png in Resources */,
 				9CED05CE2246F2CE004B5E9D /* Egypt_skin_2.png in Resources */,
 				9CED05BD2246F2BF004B5E9D /* Egypt_hair.png in Resources */,
 				9CED05922246DCE1004B5E9D /* Egypt_place.png in Resources */,
-				9C1B60D42247A5AB00DE171F /* Mexico_dish.png in Resources */,
 				9CED05A92246F29C004B5E9D /* Italy_character_2.png in Resources */,
 				9CED05C02246F2BF004B5E9D /* Italy_hair.png in Resources */,
+				9C1B60F22247EB2A00DE171F /* Mexico_dish.png in Resources */,
+				9C1B60DA2247DF2A00DE171F /* China_skill.png in Resources */,
 				5EF2F97C2054B6E400191409 /* ManifestPlist.strings in Resources */,
 				9CED05D02246F2CE004B5E9D /* China_skin_2.png in Resources */,
+				9C1B60F92247F33600DE171F /* skillAction.png in Resources */,
 				9CED05CF2246F2CE004B5E9D /* Egypt_skin_1.png in Resources */,
-				9CAC7EFC22443389006A2523 /* dishAction.png in Resources */,
 				9CED058C2246DCB7004B5E9D /* Italy_place.png in Resources */,
 				9CED05AE2246F29C004B5E9D /* China_character_2.png in Resources */,
 				9C0B0B70224591D700E31A6B /* MexicoFlag.png in Resources */,
 				9CED05BE2246F2BF004B5E9D /* China_hair.png in Resources */,
+				9C1B60E72247E80E00DE171F /* Mexico_skill.png in Resources */,
 				9CED05AC2246F29C004B5E9D /* Mexico_character_2.png in Resources */,
 				9CED05B62246F2B4004B5E9D /* Mexico_clothes.png in Resources */,
-				9C1B60D52247A5AB00DE171F /* China_dish.png in Resources */,
 				9C0B0B6E2245919F00E31A6B /* EgyptFlag.jpg in Resources */,
+				9C1B60F32247EB2A00DE171F /* China_dish.png in Resources */,
 				9CED05CD2246F2CE004B5E9D /* Mexico_skin_1.png in Resources */,
 				9CED05942246DFF3004B5E9D /* Italy_dish.png in Resources */,
 				9CED05CB2246F2CE004B5E9D /* Italy_skin_2.png in Resources */,
@@ -710,20 +711,19 @@
 				9CED05912246DCE1004B5E9D /* China_place.png in Resources */,
 				9CED05B52246F2B4004B5E9D /* Egypt_clothes.png in Resources */,
 				9CE89BAA22419A7D008DE1CB /* Glossary.plist in Resources */,
+				9C1B60F72247F33600DE171F /* dishAction.png in Resources */,
 				9CED05C92246F2CE004B5E9D /* Mexico_skin_2.png in Resources */,
 				9C0B0B6622457F4300E31A6B /* BioDiversityBoxes.scn in Resources */,
 				9CED05902246DCE1004B5E9D /* Mexico_place.png in Resources */,
-				9C1B60D32247A5AB00DE171F /* Egypt_dish.png in Resources */,
+				9C1B60F12247EB2A00DE171F /* Egypt_dish.png in Resources */,
 				9CED05B02246F29C004B5E9D /* Italy_character_1.png in Resources */,
-				9CAC7EFB22443389006A2523 /* skillAction.png in Resources */,
 				9CED05B72246F2B4004B5E9D /* China_clothes.png in Resources */,
 				9CED05AD2246F29C004B5E9D /* China_character_1.png in Resources */,
+				9C1B60E62247E80E00DE171F /* Egypt_skill.png in Resources */,
 				9CED05B82246F2B4004B5E9D /* Italy_clothes.png in Resources */,
 				9CED05AF2246F29C004B5E9D /* Egypt_character_1.png in Resources */,
 				9CED05AA2246F29C004B5E9D /* Mexico_character_1.png in Resources */,
 				9CED05CC2246F2CE004B5E9D /* Italy_skin_1.png in Resources */,
-				9C1B60CD2247A58800DE171F /* China_skill.png in Resources */,
-				9CAC7EFA22443389006A2523 /* placeAction.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

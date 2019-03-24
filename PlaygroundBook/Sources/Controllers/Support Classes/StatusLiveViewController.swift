@@ -40,7 +40,7 @@ open class StatusLiveViewController: LiveViewController {
     }
     
     @objc public func sayWarning() {
-        self.statusViewController.show(message: "Press Run My Code")
+//        self.statusViewController.show(message: "Send me code")
     }
     
     @objc public func sayWellDone() {

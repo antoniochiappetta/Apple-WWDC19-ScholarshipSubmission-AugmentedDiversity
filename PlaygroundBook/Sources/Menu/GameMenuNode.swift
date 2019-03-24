@@ -40,7 +40,7 @@ open class GameMenuNode: SKNode {
     weak var bodyNode: SKNode!
     var touches: [UITouch: Date] = [:]
     
-    var actionDistance: CGFloat = 125
+    var actionDistance: CGFloat = 150
     var actionIconRadius: CGFloat = 20
     
     var minPadding: CGFloat = 50

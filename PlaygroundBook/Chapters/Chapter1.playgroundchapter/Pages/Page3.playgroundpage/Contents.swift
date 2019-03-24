@@ -85,9 +85,9 @@ func showCharacter(character: [String:PlaygroundValue]) {
 
 //#-end-hidden-code
 //#-code-completion(everything, hide)
-//#-code-completion(identifier, show, select(dish:), Dish, ., Ramen, The, Pizza, Tacos)
-//#-code-completion(identifier, show, select(place:), Place, ., ChineseWall, Pyramids, Colosseum, MayaTemple)
-//#-code-completion(identifier, show, select(skill:), Skill, ., MartialArts, Hieroglyphs, Football, Corrida)
+//#-code-completion(identifier, show, select(dish:), Dish, ., Gyoza, KushariTea, Pizza, Tacos)
+//#-code-completion(identifier, show, select(place:), Place, ., ChineseWall, Pyramids, Colosseum, MayaTemples)
+//#-code-completion(identifier, show, select(skill:), Skill, ., MartialArts, Camels, Football, Corrida)
 //#-code-completion(identifier, show, change(clothes:), Clothes, ., China, Egypt, Italy, Mexico)
 //#-code-completion(identifier, show, change(skin:), Skin, ., China, Egypt, Italy, Mexico)
 //#-code-completion(identifier, show, change(hair:), Hair, ., China, Egypt, Italy, Mexico)
