@@ -54,27 +54,27 @@ proxy?.delegate = listener
 var characterValues: [String:PlaygroundValue] = [:]
 
 func select(dish: Dish) {
-    characterValues["dish"] = dish.rawValue
+    characterValues["dish"] = .string(dish.rawValue)
 }
 
 func select(place: Place) {
-    characterValues["place"] = place.rawValue
+    characterValues["place"] = .string(place.rawValue)
 }
 
 func select(skill: Skill) {
-    characterValues["skill"] = skill.rawValue
+    characterValues["skill"] = .string(skill.rawValue)
 }
 
 func change(clothes: Clothes) {
-    characterValues["clothes"] = clothes.rawValue
+    characterValues["clothes"] = .string(clothes.rawValue)
 }
 
 func change(skin: Skin) {
-    characterValues["skin"] = skin.rawValue
+    characterValues["skin"] = .string(skin.rawValue)
 }
 
 func change(hair: Hair) {
-    characterValues["hair"] = hair.rawValue
+    characterValues["hair"] = .string(hair.rawValue)
 }
 
 func showCharacter(character: [String:PlaygroundValue]) {
