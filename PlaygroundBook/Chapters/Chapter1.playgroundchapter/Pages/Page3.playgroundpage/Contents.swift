@@ -9,15 +9,15 @@
 /*:
  # Build your persona!
  
- Can a Chinese man have mustaches? Can an Egyptian man have pink skin? The ease of traveling in our age has generated incredible mixes and each one of us should be able to appreciate even what is non-conventional.
+ Can a Chinese man have mustaches? Can an Egyptian man have pink skin? The ease of traveling in our age has generated incredible mixes and each one of us should be able to appreciate even what is *non-conventional*.
  
- That's why now it's *mix time*! You will create your own persona mixing physical and cultural characteristics of the men and countries you met before. It will be your idea of [global citizen](glossary://GlobalCitizen)!
+ That's why now it's **mix time**! You will create your own persona mixing physical and cultural characteristics of the men and countries you met before. It will be your idea of [global citizen](glossary://GlobalCitizen)!
  
  ![GlobalCitizenship](global_citizenship.png)
  
  - - -
  1. You still see is still me, Antonio, the Italian man. Try redefining the properties of the character to build your *persona* and tap on *Run My Code*.
- 2. Try to long press on your persona and choose the right action to call all the other friends we met so far to join our amazing *multicultural environment*.
+ 2. Try to long press on your persona and enjoy the mix of dish, place, skill and physical characteristics you just created.
  */
 //#-code-completion(everything, hide)
 //#-hidden-code
@@ -38,7 +38,7 @@ class LiveViewListener: PlaygroundRemoteLiveViewProxyDelegate {
         switch value {
         case let .boolean(animated):
             if animated == true {
-                page.assessmentStatus = .pass(message: "### Fantastic! \nYou are truly part of a multicultural world now! Go and spread the world about the importance of human diversity with everyone!")
+                page.assessmentStatus = .pass(message: "### Fantastic! \nYou are truly part of a **multicultural world** now! Go and spread the world about the importance of human diversity with everyone!")
             }
         default:
             break

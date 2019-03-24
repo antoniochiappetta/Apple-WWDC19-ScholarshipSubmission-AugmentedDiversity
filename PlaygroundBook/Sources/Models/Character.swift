@@ -45,8 +45,8 @@ open class Character {
     
     // MARK: - GET Images
     
-    public var characterImage: UIImage {
-        return UIImage(named: "\(self.country!.rawValue)_character_1.png")!
+    public var characterTexture: SKTexture {
+        return SKTexture(imageNamed: "\(self.country!.rawValue)_character_1.png")
     }
     
     public var characterTextures: [SKTexture] {
@@ -67,12 +67,12 @@ open class Character {
         return UIImage(named: "\(self.skill.getCountry())_skill.png")!
     }
     
-    public var clothesImage: UIImage {
-        return UIImage(named: "\(self.clothes.rawValue)_clothes.png")!
+    public var clothesTexture: SKTexture {
+        return SKTexture(imageNamed: "\(self.clothes.rawValue)_clothes.png")
     }
     
-    public var skinImage: UIImage {
-        return UIImage(named: "\(self.skin.rawValue)_skin_1.png")!
+    public var skinTexture: SKTexture {
+        return SKTexture(imageNamed: "\(self.skin.rawValue)_skin_1.png")
     }
     
     /** Use this in place of the image to provide hand animation */
@@ -82,8 +82,8 @@ open class Character {
         return [textureStart, textureEnd]
     }
     
-    public var hairImage: UIImage {
-        return UIImage(named: "\(self.hair.rawValue)_skill.png")!
+    public var hairTexture: SKTexture {
+        return SKTexture(imageNamed: "\(self.hair.rawValue)_hair.png")
     }
     
 }

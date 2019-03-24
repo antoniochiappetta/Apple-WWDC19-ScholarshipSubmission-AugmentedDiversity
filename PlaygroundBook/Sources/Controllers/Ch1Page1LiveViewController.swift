@@ -46,7 +46,7 @@ public class Ch1Page1LiveViewController: StatusLiveViewController {
         characterView.backgroundColor = .clear
         scene.backgroundColor = .clear
         characterView.presentScene(scene)
-        let node = SKSpriteNode(texture: character.characterTextures.first!, color: .clear, size: CGSize(width: 240, height: 244))
+        let node = SKSpriteNode(texture: character.characterTexture, color: .clear, size: CGSize(width: 240, height: 244))
         let textures: [SKTexture] = character.characterTextures
         let animation = SKAction.animate(with: textures, timePerFrame: 0.3, resize: false, restore: false)
         node.run(SKAction.repeatForever(animation))
