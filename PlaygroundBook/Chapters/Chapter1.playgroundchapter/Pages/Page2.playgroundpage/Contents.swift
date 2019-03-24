@@ -72,7 +72,7 @@ func showCountries(countries: [PlaygroundValue]) {
 //#-end-hidden-code
 //#-code-completion(everything, hide)
 //#-code-completion(identifier, show, discover(country:), ., China, Egypt, Mexico)
-//#-editable-code Send the right messages
+//#-editable-code Discover
 
 //#-end-editable-code
 //#-hidden-code

@@ -9,6 +9,10 @@ public enum Country: String {
     case China, Egypt, Italy, Mexico
 }
 
+public typealias Clothes = Country
+public typealias Skin = Country
+public typealias Hair = Country
+
 public enum Dish: String {
     case Ramen, The, Pizza = "Napoli's Pizza!", Tacos
     

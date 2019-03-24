@@ -17,9 +17,9 @@ open class Character {
     open var dish: Dish
     open var place: Place
     open var skill: Skill
-    open var clothes: Country
-    open var skin: Country
-    open var hair: Country
+    open var clothes: Clothes
+    open var skin: Skin
+    open var hair: Hair
     
     // MARK: - initialization
     
@@ -33,7 +33,7 @@ open class Character {
         self.hair = country
     }
     
-    public init (dish: Dish, place: Place, skill: Skill, clothes: Country, skin: Country, hair: Country) {
+    public init (dish: Dish, place: Place, skill: Skill, clothes: Clothes, skin: Skin, hair: Hair) {
         self.country = nil
         self.dish = dish
         self.place = place

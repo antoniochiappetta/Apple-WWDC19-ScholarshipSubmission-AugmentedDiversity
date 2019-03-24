@@ -37,15 +37,3 @@ Contains English localizations of values in Manifest.plist files in the playgrou
  Once the methods have been redefined appropriately, they are called in sequence to generate the animations that show the newly created individual
 */
 "ChapterOnePageThreeName" = "Generate diversity";
-
-/*
- MARK: - Chapter 2
- Make diversity enrich people
-*/
-"ChapterTwoName" = "Diversity enrichment";
-
-
-/*
- Let the user choose which of the available individuals (the italian, the three ones in AR, the created one) should participate in the final exhibition where everyone shows what he has to enrich the others
-*/
-"ChapterTwoPageOneName" = "World exhibition";

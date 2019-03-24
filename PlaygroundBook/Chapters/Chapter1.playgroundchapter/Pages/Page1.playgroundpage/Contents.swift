@@ -9,7 +9,7 @@
 /*:
  # Hi man!
  
- My name is Antonio and I'm gonna tell you something about [human diversity](glossary://Human diversity).
+ My name is Antonio and I'm gonna tell you something about [human diversity](glossary://HumanDiversity).
  Many people don't appreciate who is different from them, they don't like people with a different skin color or coming from a different country. But everyone has something special to offer!
  
  Look at me! I'm italian and I have very special things to offer you!
