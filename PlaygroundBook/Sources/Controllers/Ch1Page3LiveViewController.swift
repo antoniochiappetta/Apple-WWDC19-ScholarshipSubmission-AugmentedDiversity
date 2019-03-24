@@ -46,7 +46,7 @@ public class Ch1Page3LiveViewController: Ch1Page1LiveViewController {
             })
         }, placeAction: {
             self.say(message: self.character.place.rawValue)
-            menu.run(SKAction.move(to: CGPoint(x: scene.frame.midX, y: scene.frame.minY + 20 + node.frame.height/2), duration: 5, delay: 0, usingSpringWithDamping: 0.75, initialSpringVelocity: 0.5))
+            menu.run(SKAction.move(to: CGPoint(x: scene.frame.midX, y: scene.frame.minY + 40 + node.frame.height/2), duration: 5, delay: 0, usingSpringWithDamping: 0.75, initialSpringVelocity: 0.5))
             UIView.animate(withDuration: 2, animations: {
                 self.placeView.alpha = 1.0
             }, completion: { (completed) in
@@ -54,7 +54,7 @@ public class Ch1Page3LiveViewController: Ch1Page1LiveViewController {
             })
         }) {
             self.say(message: self.character.skill.rawValue)
-            menu.run(SKAction.move(to: CGPoint(x: scene.frame.minX + node.frame.width/2, y: scene.frame.minY + 100 + node.frame.height/2), duration: 5, delay: 0, usingSpringWithDamping: 0.75, initialSpringVelocity: 0.5))
+            menu.run(SKAction.move(to: CGPoint(x: scene.frame.minX + node.frame.width/2, y: scene.frame.minY + 40 + node.frame.height/2), duration: 5, delay: 0, usingSpringWithDamping: 0.75, initialSpringVelocity: 0.5))
             UIView.animate(withDuration: 2, animations: {
                 self.skillView.alpha = 1.0
             }, completion: { (completed) in
