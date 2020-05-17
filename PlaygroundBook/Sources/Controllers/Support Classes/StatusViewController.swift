@@ -1,17 +1,10 @@
-//
-//  StatusViewController.swift
-//  MeetNaples
-//
-//  Created by Antonio Chiappetta on 28/03/2018.
-//  Copyright © 2018 Antonio Chiappetta. All rights reserved.
-//
-
 import UIKit
 
 @objc(StatusViewController)
 public class StatusViewController: UIViewController {
     
     // MARK: - ViewController Lifecycle
+    
     override open func viewDidLoad() {
         super.viewDidLoad()
         
@@ -21,6 +14,7 @@ public class StatusViewController: UIViewController {
     }
     
     // MARK: - Outlets
+    
     @IBOutlet weak var statusLabel: UILabel! {
         didSet {
             // Set label style
@@ -32,9 +26,12 @@ public class StatusViewController: UIViewController {
     }
     
     // MARK: - Properties
+    
     private var messageHideTimer: Timer?
     private var displayDuration = TimeInterval(5)
+    
     // MARK: - Message Handling
+    
     public func show(message: String) {
         messageHideTimer?.invalidate()
         self.statusLabel.text = message
@@ -46,7 +43,8 @@ public class StatusViewController: UIViewController {
         
     }
     
-    // MARK: - Private Functions
+    // MARK: - Private Implementation
+    
     private func showOrHideMessage(hide: Bool) {
         self.statusLabel.isHidden = hide
         

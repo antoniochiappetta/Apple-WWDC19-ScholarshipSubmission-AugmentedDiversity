@@ -1,11 +1,3 @@
-//
-//  GameMenuNode.swift
-//  GameTapMenu
-//
-//  Created by Riccardo Sabbatini on 03/05/2017.
-//  Copyright © 2017 Riccardo Sabbatini. All rights reserved.
-//
-
 import SpriteKit
 
 open class GameMenuNode: SKNode {
@@ -135,9 +127,6 @@ open class GameMenuNode: SKNode {
         return start + angleDelta * CGFloat(idx)
     }
     
-    /**
-    *  Create the actions menu for the given item (and its corresponding node). The node is firstly removed from the parent, then it becomes a child of the menu and menu is added to the parent node at the same position of the node 
-    */ 
     public func wrap(node: SKNode, dishAction: @escaping ()-> Void, placeAction: @escaping ()->Void, skillAction: @escaping ()->Void) -> GameMenuNode {
         
         let _zPosition = node.zPosition //store these properties
@@ -325,8 +314,6 @@ open class GameMenuNode: SKNode {
                     actions.append(contentsOf: [SKAction.move(to: CGPoint.zero, duration: foldDuration, delay: 0, usingSpringWithDamping: 0.9, initialSpringVelocity: 0.2),
                                                 SKAction.rotate(toAngle: CGFloat.pi, duration: foldDuration, delay: 0, usingSpringWithDamping: 0.5, initialSpringVelocity: 0.2)])
                 }
-                
-                // TODO maybe add a "blink" when the action is executed
                 
                 let fade = SKAction.fadeAlpha(to: 0.0, duration: foldDuration/2.5)
                 fade.timingMode = .easeIn

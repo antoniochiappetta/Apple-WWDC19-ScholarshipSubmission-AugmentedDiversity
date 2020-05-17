@@ -1,11 +1,3 @@
-//
-//  See LICENSE folder for this template’s licensing information.
-//
-//  Abstract:
-//  An auxiliary source file which is part of the book-level auxiliary sources.
-//  Provides the implementation of the "always-on" live view.
-//
-
 import UIKit
 import PlaygroundSupport
 import ARKit
@@ -46,7 +38,7 @@ public class Ch1Page2LiveViewController: StatusLiveViewController, ARSCNViewDele
         sceneView.session.pause()
     }
     
-    // MARK: - Actions
+    // MARK: - Scene Setup
     
     public func setupScene() {
         if let view = self.view as? ARSCNView {

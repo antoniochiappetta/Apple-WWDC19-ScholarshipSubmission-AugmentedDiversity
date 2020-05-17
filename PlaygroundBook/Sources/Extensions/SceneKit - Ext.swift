@@ -1,11 +1,7 @@
-//
-//  SceneKit - Ext.swift
-//  Book_Sources
-//
-//  Created by Antonio Chiappetta on 22/03/2019.
-//
-
 import SceneKit
+
+// MARK: - All Nodes
+
 public extension SCNNode {
     
     public class func allNodes(from file: String) -> [SCNNode] {

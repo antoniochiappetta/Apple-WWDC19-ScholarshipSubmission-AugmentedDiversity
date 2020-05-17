@@ -1,10 +1,3 @@
-//
-//  StatusLiveViewController.swift
-//  Book_Sources
-//
-//  Created by Antonio Chiappetta on 20/03/2019.
-//
-
 import UIKit
 import PlaygroundSupport
 
@@ -40,7 +33,7 @@ open class StatusLiveViewController: LiveViewController {
     }
     
     @objc public func sayWarning() {
-//        self.statusViewController.show(message: "Send me code")
+        // Not implemented
     }
     
     @objc public func sayWellDone() {

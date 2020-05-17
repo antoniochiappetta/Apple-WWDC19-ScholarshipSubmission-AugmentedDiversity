@@ -1,11 +1,3 @@
-//#-hidden-code
-//
-//  See LICENSE folder for this template’s licensing information.
-//
-//  Abstract:
-//  The Swift file containing the source code edited by the user of this playground book.
-//
-//#-end-hidden-code
 /*:
  # Build your persona!
  
@@ -19,6 +11,7 @@
  1. You still see is still me, Antonio, the Italian man. Try redefining the properties of the character to build your *persona* and tap on *Run My Code*.
  2. Long press on your persona to enjoy the mix of physical and cultural characteristics you just created.
  */
+
 //#-code-completion(everything, hide)
 //#-hidden-code
 

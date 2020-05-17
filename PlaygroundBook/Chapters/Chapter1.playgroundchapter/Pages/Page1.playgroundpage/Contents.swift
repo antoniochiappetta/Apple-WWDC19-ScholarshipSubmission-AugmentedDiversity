@@ -1,11 +1,3 @@
-//#-hidden-code
-//
-//  See LICENSE folder for this template’s licensing information.
-//
-//  Abstract:
-//  The Swift file containing the source code edited by the user of this playground book.
-//
-//#-end-hidden-code
 /*:
  # Hi man!
  
@@ -21,6 +13,7 @@
  2. Then try to long press on me and see what I can show you: I chose a *skill*, a *place* and a *dish* that are typical of my country.
  3. Every time you choose an option, you will understand once more why you should visit Italy!
  */
+
 //#-code-completion(everything, hide)
 //#-hidden-code
 
@@ -60,6 +53,7 @@ func startLearning() {
 }
 
 //#-end-hidden-code
+//#-editable-code
 startLearning()
 //#-end-editable-code
 

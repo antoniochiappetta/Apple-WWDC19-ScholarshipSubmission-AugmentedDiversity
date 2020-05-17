@@ -1,11 +1,3 @@
-//#-hidden-code
-//
-//  See LICENSE folder for this template’s licensing information.
-//
-//  Abstract:
-//  The Swift file containing the source code edited by the user of this playground book.
-//
-//#-end-hidden-code
 /*:
  # What can you find around you?
  
@@ -23,6 +15,7 @@
  2. Move around until a plane is detected, you will see a sphere appearing for each of the countries you chose.
  3. Try to enter a sphere, you will find a new triple of *skill*, *place* and *dish* typical of this particular country. See how many incredible things the world has to offer you?
  */
+
 //#-code-completion(everything, hide)
 //#-hidden-code
 

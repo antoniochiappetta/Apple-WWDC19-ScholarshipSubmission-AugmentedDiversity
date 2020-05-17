@@ -1,10 +1,3 @@
-//
-//  Character.swift
-//  Book_Sources
-//
-//  Created by Antonio Chiappetta on 24/03/2019.
-//
-
 import Foundation
 import UIKit
 import SpriteKit
@@ -21,7 +14,7 @@ open class Character {
     open var skin: Skin
     open var hair: Hair
     
-    // MARK: - initialization
+    // MARK: - Initialization
     
     public init (country: Country) {
         self.country = country
@@ -75,7 +68,6 @@ open class Character {
         return SKTexture(imageNamed: "\(self.skin.rawValue)_skin_1.png")
     }
     
-    /** Use this in place of the image to provide hand animation */
     public var skinTextures: [SKTexture] {
         let textureStart = SKTexture(imageNamed: "\(self.skin.rawValue)_skin_1.png")
         let textureEnd = SKTexture(imageNamed: "\(self.skin.rawValue)_skin_2.png")

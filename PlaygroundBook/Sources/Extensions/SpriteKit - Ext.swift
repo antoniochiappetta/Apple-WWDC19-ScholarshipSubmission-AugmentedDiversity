@@ -1,14 +1,7 @@
-//
-//  SpriteKit - Ext.swift
-//  Book_Sources
-//
-//  Created by Antonio Chiappetta on 21/03/2019.
-//
-
 import SpriteKit
 
-////////////////////////////////////////////////////////////////////////////////////////////////////
-// MARK: Move
+// MARK: - Move
+
 @objc public extension SKAction {
     
     @objc public class func move(by delta: CGVector, duration: TimeInterval, delay: TimeInterval, usingSpringWithDamping dampingRatio: CGFloat, initialSpringVelocity velocity: CGFloat) -> SKAction {
@@ -46,9 +39,8 @@ import SpriteKit
     }
 }
 
+// MARK: - Rotate
 
-////////////////////////////////////////////////////////////////////////////////////////////////////
-// MARK: Rotate
 @objc public extension SKAction {
     
     @objc public class func rotate(byAngle radians: CGFloat, duration: TimeInterval, delay: TimeInterval, usingSpringWithDamping dampingRatio: CGFloat, initialSpringVelocity velocity: CGFloat) -> SKAction {
@@ -62,9 +54,8 @@ import SpriteKit
     }
 }
 
+// MARK: - Speed
 
-////////////////////////////////////////////////////////////////////////////////////////////////////
-// MARK: Speed
 @objc public extension SKAction {
     
     @objc public class func speed(by speed: CGFloat, duration: TimeInterval, delay: TimeInterval, usingSpringWithDamping dampingRatio: CGFloat, initialSpringVelocity velocity: CGFloat) -> SKAction {
@@ -78,9 +69,8 @@ import SpriteKit
     }
 }
 
+// MARK: - Scale
 
-////////////////////////////////////////////////////////////////////////////////////////////////////
-// MARK: Scale
 public extension SKAction {
     
     @objc public class func scale(by scale: CGFloat, duration: TimeInterval, delay: TimeInterval, usingSpringWithDamping dampingRatio: CGFloat, initialSpringVelocity velocity: CGFloat) -> SKAction {
@@ -120,9 +110,8 @@ public extension SKAction {
     }
 }
 
+// MARK: - Fade
 
-////////////////////////////////////////////////////////////////////////////////////////////////////
-// MARK: Fade
 public extension SKAction {
     
     @objc public class func fadeIn(withDuration duration: TimeInterval, delay: TimeInterval, usingSpringWithDamping dampingRatio: CGFloat, initialSpringVelocity velocity: CGFloat) -> SKAction {
@@ -146,9 +135,8 @@ public extension SKAction {
     }
 }
 
+// MARK: - Resize
 
-////////////////////////////////////////////////////////////////////////////////////////////////////
-// MARK: Resize
 @objc public extension SKAction {
     
     @objc public class func resize(toWidth width: CGFloat, duration: TimeInterval, delay: TimeInterval, usingSpringWithDamping dampingRatio: CGFloat, initialSpringVelocity velocity: CGFloat) -> SKAction {
@@ -178,20 +166,18 @@ public extension SKAction {
     }
 }
 
+// MARK: - Colorize
 
-////////////////////////////////////////////////////////////////////////////////////////////////////
-// MARK: Colorize
 @objc public extension SKAction {
     
     @objc public class func colorize(withColorBlendFactor colorBlendFactor: CGFloat, duration: TimeInterval, delay: TimeInterval, usingSpringWithDamping dampingRatio: CGFloat, initialSpringVelocity velocity: CGFloat) -> SKAction {
         
-        return animate(keyPath: \SKSpriteNode.colorBlendFactor, toValue: colorBlendFactor, duration: duration, delay: delay, usingSpringWithDamping: dampingRatio, initialSpringVelocity: velocity)
+        return animate(keyPath: SKSpriteNode.colorBlendFactor, toValue: colorBlendFactor, duration: duration, delay: delay, usingSpringWithDamping: dampingRatio, initialSpringVelocity: velocity)
     }
 }
 
-
-////////////////////////////////////////////////////////////////////////////////////////////////////
 // MARK: - Damping Logic
+
 public extension SKAction {
     
     public class func animate<T>(keyPath: ReferenceWritableKeyPath<T, CGFloat>, byValue initialDistance: CGFloat, duration: TimeInterval, delay: TimeInterval, usingSpringWithDamping dampingRatio: CGFloat, initialSpringVelocity velocity: CGFloat) -> SKAction {
